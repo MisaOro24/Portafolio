@@ -1,0 +1,547 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color:#F5F5F5;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu-------------------------------------------*/
+
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    margin: 1rem 3rem 3rem;
+}
+
+header.menu__header{
+    display: flex;
+    margin: 0 5rem;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.menu__title{
+    font-size: 1rem;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+
+}
+/*Sección Title-------------------------------------*/
+
+section.title{
+text-align: center;
+display: flex;
+width: 100%;
+justify-content: center;
+background: F5F5F5;
+align-items: center;
+
+}
+.title__div{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    
+}
+.title__container h2{
+    width: 700px;
+    height: 122px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
+}
+.title__container h3{
+    width: 600px;
+    height: 58px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.title__network{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    width: 50%;
+}
+
+.title__profile{
+    width: 360px;
+    height: 360px;  
+    border-radius: 50%;
+}
+/*Sección About--------------------------------------------*/
+
+section.about {
+
+    padding: 64px 120px;
+    background: #EAF2FD;
+}
+
+section.about div.about__container{
+    width: 700px;
+}
+
+section.about div.about__container h3.about__title{
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+section.about div.about__container p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;  /*estaciado entre lineas*/
+    margin-bottom: 1rem;
+}
+/*Section skills----------------------------------------------*/
+section.skills{
+    margin: 64px 100px;
+}
+
+section.skills h3.skills__title{
+    font-size: 32px;
+    text-align: start;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+
+section.skills div.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section.skills div.skills__box{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    flex-wrap: wrap;
+    padding: 16px;
+    margin: 22px 15px 22px 0px;
+    width: 120px;
+    height: 160px;
+    border-radius: 15px;    
+    border: 1px solid rgb(208, 207, 207)
+    
+}
+
+section.skills .skills__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 50%;
+    height: 100px;
+}
+section.skills div.skills__box ul{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    line-height:19px;
+}
+
+/*Sección Hobbies-------------------------------------------------*/
+
+section.hobbies{
+    margin: 64px 100px;
+}
+
+
+section.hobbies h3.hobbies__title{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+
+section.hobbies div.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section.hobbies div.hobbies__box{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-start ;
+    padding: 16px;
+    margin: 22px 15px 22px 0px;
+    width: 120px;
+    height: 160px;
+    border-radius: 15px;    
+    border: 1px solid rgb(230, 226, 226)
+}
+
+section.hobbies div.hobbies__box img#estudiar{
+    width: 110%;
+    height: 150px;    
+
+}
+
+/* Experiencia Académica--------------------------------------------------------*/
+
+section.academic{    
+    background: #EAF2FD;
+    padding: 64px 120px;
+}
+
+section.academic h2.academic__title{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom:1rem;
+}
+
+section.academic div.academic__courses{
+    display: flex;
+    justify-content: center;
+}
+
+section.academic div.academic__courses__box{
+    width: 26.6rem;
+    margin: 0 1rem;
+    justify-content: center;
+}
+
+section.academic div.academic__courses__box ul{
+    margin: 32px;
+    padding: 0;    
+}
+
+section.academic div.academic__courses__box ul li{
+    padding: 0;   
+}
+
+div.academic__courses__box ul li.academic__courses__item__img{
+    background-color: #EAF2FD;
+
+}
+
+div.academic__courses__box ul li.academic__courses__item__img img.imaging__courses{
+    width: 80%;
+}
+
+div.academic__courses__box ul li.academic__courses__item__title{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+div.academic__courses__box ul li.academic__courses__item__subtitle{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* experiencia-------------------------------------------------------------*/
+
+section.experience{
+    background: #F5F5F5;
+    padding: 64px 120px;
+}
+
+section.experience h2.experience__section__title{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom:1rem;
+    background: #e9dc4f;
+}
+
+section.experience div.experiencie__box{
+    display: inline-flex;
+    align-items: center;   
+    background: #77d922; 
+}
+
+section.experience div.experiencie__box h2{
+    font-size: 24px;
+    vertical-align: middle;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background: #1ee2cf;
+}
+
+section.experience div.experiencie__box img.experience__img_encriptador{
+    width: 69%;
+    border: #2A7AE4 solid 1px;
+    padding: 0;
+    margin-bottom: 2rem;
+    background: #187bd2;
+}
+
+section.experience div.experiencie__box h3{
+    width: 368px;
+    height: 19px;
+    margin-left: 1rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    background: #350ef7;
+}
+
+section.experience div.experience__description span.experience__repo button.experiencia__botao--repo{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 8rem;
+    color: #2A7AE4;
+    border-style:solid;
+    border-color: #2A7AE4;
+    border-radius: 15px;
+    padding: 3%;
+    background-color: white;
+    background: #ad16da;
+    
+}
+
+section.experience div.experience__description span.experience__repo button.experiencia__botao--repo:hover{
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+
+}
+
+section.experience div.experience__description span.experience__demo button.experience__botao--demo:hover{
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+
+}
+
+section.experience div.experience__description span.experience__demo button.experience__botao--demo{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 8rem;
+    color: #2A7AE4;
+    border-style:solid;
+    border-color: #2A7AE4;
+    padding: 3%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+section.experience div.experiencie__box img.experience__img_ahorcado{
+    width: 69%;
+    border: #2A7AE4 solid 1px;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+section.experience div.experience__ahorcado {
+    display: flex;
+    align-items: center;
+
+}
+
+/*Contacto------------------------------------------------------------------------*/
+
+section.formcontato {     
+    padding: 44px 0;
+    background: var(--color_fondo_2);
+}
+
+section.formcontato div.formcontato__contacto{
+    display: flex; 
+    justify-content: center; 
+    margin-right: 0%;
+    width: 40%;
+    height: 60%;
+}
+
+section.formcontato div.formcontato__contacto div.formcontato__izquierda{
+    display: flex;
+    
+}
+
+/*  section.formcontato div.formcontato__contacto div.formcontato__izquierda img{*/
+
+section.formcontato div.formcontato__izquierda img.formcontato__img{   
+    width: 150%;    
+    margin-left: 10%;
+    margin-right: 5%;
+    padding-right: 3%;
+    
+}
+
+
+section.formcontato div.formcontato__text{
+    display: block;
+    width: 35%;
+    padding-left: 30%;
+}
+
+
+section.formcontato div.formcontato__contacto div.formcontato__text h2.formcontato__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 1rem;
+}
+
+section.formcontato div.formcontato__contacto div.formcontato__text h3.formcontato__subtext{
+    width: 656px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+}
+
+
+section.formcontato div.formcontato__contacto div.formcontato__text form.formcontato__form {
+    margin-top: 3%;
+}
+
+section.formcontato div.formcontato__contacto div.formcontato__text form.formcontato__form input.formcontato__input {
+    width: 656px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 1% 0% 5% 0%;
+    
+}
+
+section.formcontato div.formcontato__contacto div.formcontato__text form.formcontato__form textarea.formcontato__textarea {
+    border-radius: 15px;
+}
+
+
+
+section.formcontato div.formcontato__contacto div.formcontato__text form.formcontato__form button.formcontato__botao {
+    margin-top: 1rem;
+    color: #2A7AE4;
+    border-style:solid;
+    border-color: #2A7AE4;
+    padding: 3%;
+    background-color: white;
+    border-style:solid;
+    border-radius: 15px;  
+    width: 105px;
+    height: 51px;
+}
+
+section.formcontato div.formcontato__contacto div.formcontato__text form.formcontato__form button.formcontato__botao:hover{
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+
+}
+/*footeer*/
+
+.footer {
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 550;
+    margin-bottom: 10px;
+    
+  }
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
